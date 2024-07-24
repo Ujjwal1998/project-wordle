@@ -230,3 +230,40 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+.keyboard-wrapper {
+  font-size: xx-large;
+}
+
+.top-row,
+.home-row,
+.bottom-row {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  background-color: lightgray;
+  padding: 5px;
+  margin: 5px;
+  min-width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10%;
+  font-weight: 600;
+}
+/* Correct letters should have a green background and white text
+Misplaced letters should have a yellow background and white text
+Incorrect letters should have a dark gray background and white text */
+.correct {
+  background-color: darkgreen;
+  color: white;
+}
+.incorrect {
+  background-color: darkgray;
+  color: white;
+}
+.misplaced {
+  background-color: yellow;
+  color: white;
+}
